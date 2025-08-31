@@ -274,10 +274,10 @@ class ApiModel extends CI_model
 	{
 
 		$data = array(
-			'amount'   => $this->input->get('amount'),
+			'amount'   => $this->input->post('amount'),
 			'order_id' => $orderid,
 			'order_status' => 'FAILED',
-			'user_id'  => $this->input->get('user_id'),
+			'user_id'  => $this->input->post('user_id'),
 		);
 
 		$this->db->insert('payments', $data);
