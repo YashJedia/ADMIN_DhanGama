@@ -191,4 +191,5 @@ $route['api/withdraw-payment-request']				= 'Api/withdrawPaymentRequest';
 $route['api/send_notification_crud']				= 'Api/sendNotificationCrud'; // CRUD OPERATION
 $route['api/payg/order/create']	        			= 'Api/payGOrderCreate';
 $route['api/payg/order/success']                    = 'Api/payGOrderSuccess';
+$route['api/payu_payment_start']['post'] = 'payment/payu_payment_start';
 
